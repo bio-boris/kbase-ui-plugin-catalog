@@ -107,6 +107,10 @@ define([
                 .append($('<div>').append(descriptionText));
             $m.append('<hr>');
 
+            descriptionText = 'See current job queue';
+            $m.append($('<h4>').append(self.makeLink(base + 'queue_status', 'Queue Status')))
+                .append($('<div>').append(descriptionText));
+            $m.append('<hr>');
 
             descriptionText = '(for developers) Learn and get the tools for building your own KBase Modules, Apps, Services, and Functions.';
             $m.append($('<h4>').append(self.makeLink('https://github.com/kbase/kb_sdk', 'KBase SDK')))
